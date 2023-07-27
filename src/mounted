@@ -1,0 +1,11 @@
+linux--mounted
+sudo apt-get update
+sudo apt-get install cifs-utils
+sudo mkdir -p /mnt/shared_folder
+sudo mount -t cifs //REMOTE_MACHINE_IP/SHARED_FOLDER_NAME /mnt/shared_folder -o username=USERNAME,password=PASSWORD
+
+-- unmount
+sudo umount /mnt/shared_folder
+
+
+
